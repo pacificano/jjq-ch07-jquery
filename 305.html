@@ -33,11 +33,15 @@
 
 	<script type="text/javascript">
 
+	$(function () { // wait till page is loaded before running code
+
 		$(':header').addClass('headline');
 		$('li:lt(3)').hide().fadeIn(1500);
 		$('li').on('click', function () {
 			$(this).remove();
 		});
+
+	});
 
 	</script>
 
